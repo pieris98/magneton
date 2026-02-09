@@ -3,7 +3,7 @@
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-magneton--data-FFD21E?logo=huggingface)](https://huggingface.co/datasets/rcalef/magneton-data)
 <img src="assets/images/magneton_logo.png" width="400" alt="Cartoon creature composed of multiple proteins" align="right">
 
-This repository provides the code for Magneton, an integrated environment for developing substructure-aware protein models, detailed in the paper Greater than the Sum of Its Parts: Building Substructure into Protein Encoding Models.
+Magneton is an integrated environment for developing substructure-aware protein models. Details can be found in our paper "Greater than the Sum of Its Parts: Building Substructure into Protein Encoding Models" (ICLR 2026), linked above.
 
 Magneton provides:
 1. A large-scale dataset of 530,601 proteins annotated with over 1.7 million substructures spanning 13,075 types
@@ -226,12 +226,12 @@ One of the goals of Magneton's design is to make it easy to add new models or ev
 Please consider citing `magneton` if it proves useful in your work.
 ```bibtex
 @misc{calef2025greatersumpartsbuilding,
-      title={Greater than the Sum of Its Parts: Building Substructure into Protein Encoding Models}, 
+      title={Greater than the Sum of Its Parts: Building Substructure into Protein Encoding Models},
       author={Robert Calef and Arthur Liang and Manolis Kellis and Marinka Zitnik},
       year={2025},
       eprint={2512.18114},
       archivePrefix={arXiv},
       primaryClass={q-bio.QM},
-      url={https://arxiv.org/abs/2512.18114}, 
+      url={https://arxiv.org/abs/2512.18114},
 }
 ```
