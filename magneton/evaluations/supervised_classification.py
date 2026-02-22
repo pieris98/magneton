@@ -52,10 +52,10 @@ def run_supervised_classification(
     expected_final_metrics_path = output_dir / f"test_{task}_metrics.json"
     if expected_final_metrics_path.exists():
         if not config.evaluate.rerun_completed:
-            print(f"{task}: final predictions preset, rerun_completed=False, skipping")
+            print(f"{task}: final predictions present, rerun_completed=False, skipping")
             return
         else:
-            print(f"{task}: final predictions preset, rerun_completed=True, rerunning")
+            print(f"{task}: final predictions present, rerun_completed=True, rerunning")
 
     # Set up callbacks with appropriate monitoring metric
     if task_type == EVAL_TASK.MULTICLASS:
