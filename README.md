@@ -1,9 +1,11 @@
 # Magneton
 [![arXiv](https://img.shields.io/badge/arXiv-2512.18114-b31b1b?logo=arxiv)](https://arxiv.org/abs/2512.18114)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-magneton--data-FFD21E?logo=huggingface)](https://huggingface.co/datasets/rcalef/magneton-data)
+[![OpenReview](https://img.shields.io/badge/OpenReview-ICLR_2026-8c1b12?logo=data:image/ico%2bxml;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAUElEQVQ4y2NggIDVQPyfAP7IyMhowYADgAw4DsQheDBeQ1ZDMT6A1yWkGIDVEGIMWI2EH6OrJ8YAvOpHDRg1ACZAKDMh4+PYDCCUndEx2AAA4u5KH3azW9wAAAAASUVORK5CYII=)](https://openreview.net/forum?id=7LoFonLZqs)
+
 <img src="assets/images/magneton_logo.png" width="400" alt="Cartoon creature composed of multiple proteins" align="right">
 
-Magneton is an integrated environment for developing substructure-aware protein models. Details can be found in our paper "Greater than the Sum of Its Parts: Building Substructure into Protein Encoding Models" (ICLR 2026), linked above.
+Magneton is an integrated environment for developing substructure-aware protein models. Details can be found in our paper "Greater than the Sum of Its Parts: Building Substructure into Protein Encoding Models" (ICLR 2026), linked above. For a high-level overview, please check out our [project website](https://rcalef.github.io/magneton/).
 
 Magneton provides:
 1. A large-scale dataset of 530,601 proteins annotated with over 1.7 million substructures spanning 13,075 types
@@ -11,6 +13,7 @@ Magneton provides:
 3. A benchmark suite of 13 tasks probing residue-, substructure-, and protein-level representations.
 
 Using Magneton, we develop substructure-tuning, a supervised finetuning method that distills substructural knowledge into pretrained protein models. Across state-of-the-art sequence- and structure-based models, substructure-tuning improves function-related tasks while revealing that substructural signals are complementary to global structural information.
+
 ## Contents
 
 - [Contents](#contents)
@@ -225,13 +228,12 @@ One of the goals of Magneton's design is to make it easy to add new models or ev
 ## Citing
 Please consider citing `magneton` if it proves useful in your work.
 ```bibtex
-@misc{calef2025greatersumpartsbuilding,
-      title={Greater than the Sum of Its Parts: Building Substructure into Protein Encoding Models},
-      author={Robert Calef and Arthur Liang and Manolis Kellis and Marinka Zitnik},
-      year={2025},
-      eprint={2512.18114},
-      archivePrefix={arXiv},
-      primaryClass={q-bio.QM},
-      url={https://arxiv.org/abs/2512.18114},
+@inproceedings{
+  calef2026greater,
+  title={Greater than the Sum of Its Parts:  Building Substructure into Protein Encoding Models},
+  author={Robert Calef and Arthur Liang and Manolis Kellis and Marinka Zitnik},
+  booktitle={The Fourteenth International Conference on Learning Representations},
+  year={2026},
+  url={https://openreview.net/forum?id=7LoFonLZqs}
 }
 ```
