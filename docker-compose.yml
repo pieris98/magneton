@@ -1,0 +1,25 @@
+services:
+  magneton:
+    build:
+      context: ..
+      dockerfile: magneton/Dockerfile
+    image: magneton:latest
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    volumes:
+      - ~/.cache/huggingface:/workspace/phd/magneton/.cache/huggingface
+      - ./checkpoints:/workspace/phd/magneton/checkpoints
+      - ./data:/workspace/phd/magneton/data
+    working_dir: /workspace/phd/magneton
+    environment:
+      - WANDB_MODE=offline
+      - HF_HOME=/workspace/phd/magneton/.cache/huggingface
+      - PROJECT_ROOT=/workspace/phd/magneton
+    stdin_open: true
+    tty: true
+    command: ["bash"]
